@@ -4,202 +4,296 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
+local TextBox = Instance.new("TextButton")
 local Frame = Instance.new("Frame")
+local FrameGUI = Instance.new("ImageLabel")
 local TurdalGUI = Instance.new("TextLabel")
-local TURDAL = Instance.new("ImageLabel")
 local MadebyTurdal = Instance.new("TextLabel")
 local Scripts = Instance.new("TextButton")
 local Visuals = Instance.new("TextButton")
 local Misc = Instance.new("TextButton")
-local ScriptsTab = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
-local TextButton_3 = Instance.new("TextButton")
 local VisualsTab = Instance.new("Frame")
-local TextButton_4 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local esp = Instance.new("TextButton")
+local ScriptsTab = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local natural = Instance.new("TextButton")
+local arsenal = Instance.new("TextButton")
+local mm2 = Instance.new("TextButton")
+local phantom = Instance.new("TextButton")
 local MiscTab = Instance.new("Frame")
-local TextButton_5 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Infinite = Instance.new("TextButton")
+local TURDAL = Instance.new("ImageLabel")
 
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
 
+TextBox.Name = "TextBox"
+TextBox.Parent = ScreenGui
+TextBox.BackgroundColor3 = Color3.fromRGB(33, 124, 0)
+TextBox.Position = UDim2.new(0, 0, 0.943560064, 0)
+TextBox.Size = UDim2.new(0, 117, 0, 39)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "Close/Open"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 24.000
+
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BackgroundTransparency = 0.100
-Frame.BorderColor3 = Color3.fromRGB(12, 53, 10)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.522462189, 0, 0.275808275, 0)
-Frame.Size = UDim2.new(0, 470, 0, 344)
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Size = UDim2.new(0, 1010, 0, 691)
 Frame.Active = true
 Frame.Draggable = true
 
+FrameGUI.Name = "FrameGUI"
+FrameGUI.Parent = Frame
+FrameGUI.Active = true
+FrameGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameGUI.BackgroundTransparency = 1.000
+FrameGUI.Position = UDim2.new(0.59572947, 0, 0.145562232, 0)
+FrameGUI.Size = UDim2.new(0, 351, 0, 437)
+FrameGUI.Image = "rbxassetid://3570695787"
+FrameGUI.ImageColor3 = Color3.fromRGB(0, 0, 0)
+FrameGUI.ImageTransparency = 0.300
+FrameGUI.ScaleType = Enum.ScaleType.Slice
+FrameGUI.SliceCenter = Rect.new(100, 100, 100, 100)
+FrameGUI.SliceScale = 0.120
+
 TurdalGUI.Name = "Turdal GUI"
-TurdalGUI.Parent = Frame
+TurdalGUI.Parent = FrameGUI
 TurdalGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TurdalGUI.BackgroundTransparency = 1.000
-TurdalGUI.Position = UDim2.new(0.331071764, 0, 0, 0)
-TurdalGUI.Size = UDim2.new(0, 164, 0, 43)
-TurdalGUI.Font = Enum.Font.SciFi
+TurdalGUI.Position = UDim2.new(0.0601277202, 0, -0.000638753176, 0)
+TurdalGUI.Size = UDim2.new(0, 323, 0, 43)
+TurdalGUI.Font = Enum.Font.Michroma
 TurdalGUI.Text = "Turdal GUI"
 TurdalGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
 TurdalGUI.TextSize = 37.000
 TurdalGUI.TextStrokeTransparency = 0.000
 
-TURDAL.Name = "TURDAL"
-TURDAL.Parent = Frame
-TURDAL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TURDAL.BackgroundTransparency = 1.000
-TURDAL.Position = UDim2.new(0.361637414, 0, 0.654069781, 0)
-TURDAL.Size = UDim2.new(0, 134, 0, 119)
-TURDAL.Image = "rbxassetid://10256469065"
-TURDAL.ImageTransparency = 0.500
-
 MadebyTurdal.Name = "Made by Turdal"
-MadebyTurdal.Parent = Frame
+MadebyTurdal.Parent = FrameGUI
 MadebyTurdal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MadebyTurdal.BackgroundTransparency = 1.000
-MadebyTurdal.Position = UDim2.new(0.339111596, 0, 0.884461164, 0)
-MadebyTurdal.Size = UDim2.new(0, 157, 0, 39)
-MadebyTurdal.Font = Enum.Font.SciFi
+MadebyTurdal.Position = UDim2.new(0.24616383, 0, 0.89140749, 0)
+MadebyTurdal.Size = UDim2.new(0, 264, 0, 39)
+MadebyTurdal.Font = Enum.Font.Michroma
 MadebyTurdal.Text = "Made by Turdal"
 MadebyTurdal.TextColor3 = Color3.fromRGB(255, 255, 255)
 MadebyTurdal.TextSize = 25.000
 MadebyTurdal.TextStrokeTransparency = 0.000
 
 Scripts.Name = "Scripts"
-Scripts.Parent = Frame
+Scripts.Parent = FrameGUI
 Scripts.BackgroundColor3 = Color3.fromRGB(113, 154, 94)
+Scripts.BackgroundTransparency = 1.000
 Scripts.BorderSizePixel = 0
-Scripts.Position = UDim2.new(0.00173010351, 0, 0.125, 0)
-Scripts.Size = UDim2.new(0, 160, 0, 40)
-Scripts.Font = Enum.Font.Nunito
+Scripts.Position = UDim2.new(0.0216673613, 0, 0.0962004066, 0)
+Scripts.Size = UDim2.new(0, 120, 0, 40)
+Scripts.Font = Enum.Font.Michroma
 Scripts.Text = "Scripts"
-Scripts.TextColor3 = Color3.fromRGB(0, 0, 0)
-Scripts.TextSize = 54.000
+Scripts.TextColor3 = Color3.fromRGB(205, 255, 209)
+Scripts.TextSize = 30.000
+Scripts.TextWrapped = true
 
 Visuals.Name = "Visuals"
-Visuals.Parent = Frame
+Visuals.Parent = FrameGUI
 Visuals.BackgroundColor3 = Color3.fromRGB(113, 154, 94)
+Visuals.BackgroundTransparency = 1.000
 Visuals.BorderSizePixel = 0
-Visuals.Position = UDim2.new(0.335600436, 0, 0.125000015, 0)
-Visuals.Size = UDim2.new(0, 160, 0, 40)
-Visuals.Font = Enum.Font.Nunito
+Visuals.Position = UDim2.new(0.375481248, 0, 0.0951866657, 0)
+Visuals.Size = UDim2.new(0, 120, 0, 40)
+Visuals.Font = Enum.Font.Michroma
 Visuals.Text = "Visuals"
-Visuals.TextColor3 = Color3.fromRGB(0, 0, 0)
-Visuals.TextSize = 54.000
+Visuals.TextColor3 = Color3.fromRGB(205, 255, 209)
+Visuals.TextSize = 30.000
+Visuals.TextWrapped = true
 
 Misc.Name = "Misc"
-Misc.Parent = Frame
+Misc.Parent = FrameGUI
 Misc.BackgroundColor3 = Color3.fromRGB(113, 154, 94)
+Misc.BackgroundTransparency = 0.990
 Misc.BorderSizePixel = 0
-Misc.Position = UDim2.new(0.675063133, 0, 0.125, 0)
-Misc.Size = UDim2.new(0, 152, 0, 40)
-Misc.Font = Enum.Font.Nunito
+Misc.Position = UDim2.new(0.708884239, 0, 0.0947927833, 0)
+Misc.Size = UDim2.new(0, 95, 0, 40)
+Misc.Font = Enum.Font.Michroma
 Misc.Text = "Misc"
-Misc.TextColor3 = Color3.fromRGB(0, 0, 0)
-Misc.TextSize = 54.000
+Misc.TextColor3 = Color3.fromRGB(205, 255, 209)
+Misc.TextSize = 30.000
+
+VisualsTab.Name = "VisualsTab"
+VisualsTab.Parent = FrameGUI
+VisualsTab.Active = true
+VisualsTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+VisualsTab.BackgroundTransparency = 0.500
+VisualsTab.Position = UDim2.new(0, 0, 0.185445264, 0)
+VisualsTab.Size = UDim2.new(0, 350, 0, 299)
+VisualsTab.Visible = false
+
+TextLabel.Parent = VisualsTab
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 0.500
+TextLabel.Size = UDim2.new(0, 350, 0, 37)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "(Visuals)"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 32.000
+
+esp.Name = "esp"
+esp.Parent = VisualsTab
+esp.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
+esp.BackgroundTransparency = 0.700
+esp.BorderColor3 = Color3.fromRGB(27, 42, 53)
+esp.Position = UDim2.new(0.0223106891, 0, 0.172007293, 0)
+esp.Size = UDim2.new(0, 120, 0, 29)
+esp.Font = Enum.Font.SourceSans
+esp.Text = "Simple Esp"
+esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+esp.TextSize = 18.000
+esp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/nqyGkWvx", true))()
+end)
 
 ScriptsTab.Name = "ScriptsTab"
-ScriptsTab.Parent = Frame
+ScriptsTab.Parent = FrameGUI
 ScriptsTab.Active = true
 ScriptsTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ScriptsTab.BackgroundTransparency = 0.500
 ScriptsTab.BorderColor3 = Color3.fromRGB(12, 53, 0)
 ScriptsTab.BorderSizePixel = 0
-ScriptsTab.Position = UDim2.new(0.000532694045, 0, 0.241279066, 0)
-ScriptsTab.Size = UDim2.new(0, 469, 0, 260)
+ScriptsTab.Position = UDim2.new(0.00284900283, 0, 0.190313905, 0)
+ScriptsTab.Size = UDim2.new(0, 350, 0, 299)
+ScriptsTab.Visible = false
 
-TextButton.Parent = ScriptsTab
-TextButton.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
-TextButton.BackgroundTransparency = 0.700
-TextButton.Position = UDim2.new(0.0423607007, 0, 0.0370491371, 0)
-TextButton.Size = UDim2.new(0, 120, 0, 29)
-TextButton.Font = Enum.Font.Nunito
-TextButton.Text = "Natural Disaster GUI"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 15.000
-TextButton.TextWrapped = true
-Infinite.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+TextLabel_2.Parent = ScriptsTab
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BackgroundTransparency = 0.500
+TextLabel_2.Position = UDim2.new(0, 0, 0.00292019546, 0)
+TextLabel_2.Size = UDim2.new(0, 350, 0, 37)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "(Scripts)"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 32.000
+
+natural.Name = "natural"
+natural.Parent = ScriptsTab
+natural.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
+natural.BackgroundTransparency = 0.700
+natural.Position = UDim2.new(0.0281383153, 0, 0.170745283, 0)
+natural.Size = UDim2.new(0, 120, 0, 29)
+natural.Font = Enum.Font.Nunito
+natural.Text = "Natural Disaster GUI"
+natural.TextColor3 = Color3.fromRGB(255, 255, 255)
+natural.TextSize = 15.000
+natural.TextWrapped = true
+natural.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()
 end)
 
-TextButton_2.Parent = ScriptsTab
-TextButton_2.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
-TextButton_2.BackgroundTransparency = 0.700
-TextButton_2.Position = UDim2.new(0.377829701, 0, 0.0342394114, 0)
-TextButton_2.Size = UDim2.new(0, 120, 0, 31)
-TextButton_2.Font = Enum.Font.Nunito
-TextButton_2.Text = "Phantom Forces GUI"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextSize = 15.000
-Infinite.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidMasterX/strawhook/main/script.lua", true))()
-end)
-
-
-TextButton_3.Parent = ScriptsTab
-TextButton_3.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
-TextButton_3.BackgroundTransparency = 0.700
-TextButton_3.Position = UDim2.new(0.709746778, 0, 0.0263082087, 0)
-TextButton_3.Size = UDim2.new(0, 120, 0, 31)
-TextButton_3.Font = Enum.Font.Nunito
-TextButton_3.Text = "Arsenal GUI"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextSize = 18.000
-Infinite.MouseButton1Down:connect(function()
+arsenal.Name = "arsenal"
+arsenal.Parent = ScriptsTab
+arsenal.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
+arsenal.BackgroundTransparency = 0.700
+arsenal.Position = UDim2.new(0.567211151, 0, 0.16971004, 0)
+arsenal.Size = UDim2.new(0, 120, 0, 29)
+arsenal.Font = Enum.Font.Nunito
+arsenal.Text = "Arsenal GUI"
+arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+arsenal.TextSize = 18.000
+arsenal.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Arsenal'),true))()
 end)
 
-
-VisualsTab.Name = "VisualsTab"
-VisualsTab.Parent = Frame
-VisualsTab.Active = true
-VisualsTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-VisualsTab.BackgroundTransparency = 0.500
-VisualsTab.Position = UDim2.new(0.00173015194, 0, 0.241279066, 0)
-VisualsTab.Size = UDim2.new(0, 468, 0, 261)
-VisualsTab.Visible = false
-
-TextButton_4.Parent = VisualsTab
-TextButton_4.BackgroundColor3 = Color3.fromRGB(29, 112, 14)
-TextButton_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextButton_4.Position = UDim2.new(0.0250967182, 0, 0.0244182721, 0)
-TextButton_4.Size = UDim2.new(0, 127, 0, 31)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = "Simple Esp"
-TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.TextSize = 22.000
-Infinite.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/nqyGkWvx", true))()
+mm2.Name = "mm2"
+mm2.Parent = ScriptsTab
+mm2.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
+mm2.BackgroundTransparency = 0.700
+mm2.Position = UDim2.new(0.567211151, 0, 0.323556244, 0)
+mm2.Size = UDim2.new(0, 120, 0, 29)
+mm2.Font = Enum.Font.Nunito
+mm2.Text = "MM2 GUI"
+mm2.TextColor3 = Color3.fromRGB(255, 255, 255)
+mm2.TextSize = 18.000
+mm2.MouseButton1Down:connect(function()
+	repeat wait() until game.Players.LocalPlayer.Character
+	url = "https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"
+	loadstring(game:HttpGet(url))()
 end)
 
+phantom.Name = "phantom"
+phantom.Parent = ScriptsTab
+phantom.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
+phantom.BackgroundTransparency = 0.700
+phantom.Position = UDim2.new(0.029615283, 0, 0.324193865, 0)
+phantom.Size = UDim2.new(0, 120, 0, 29)
+phantom.Font = Enum.Font.Nunito
+phantom.Text = "Phantom Forces GUI"
+phantom.TextColor3 = Color3.fromRGB(255, 255, 255)
+phantom.TextSize = 15.000
+phantom.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidMasterX/strawhook/main/script.lua", true))()
+end)
 
 MiscTab.Name = "MiscTab"
-MiscTab.Parent = Frame
+MiscTab.Parent = FrameGUI
 MiscTab.Active = true
 MiscTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 MiscTab.BackgroundTransparency = 0.500
-MiscTab.Position = UDim2.new(0.00173015194, 0, 0.241279066, 0)
-MiscTab.Size = UDim2.new(0, 468, 0, 261)
+MiscTab.Position = UDim2.new(0.00284900283, 0, 0.187733591, 0)
+MiscTab.Size = UDim2.new(0, 350, 0, 300)
 MiscTab.Visible = false
 
-TextButton_5.Parent = MiscTab
-TextButton_5.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
-TextButton_5.BackgroundTransparency = 0.700
-TextButton_5.Position = UDim2.new(0.0250966642, 0, 0.0244182721, 0)
-TextButton_5.Size = UDim2.new(0, 128, 0, 31)
-TextButton_5.Font = Enum.Font.Nunito
-TextButton_5.Text = "Infinite Yield"
-TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_5.TextSize = 25.000
+TextLabel_3.Parent = MiscTab
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BackgroundTransparency = 0.500
+TextLabel_3.Position = UDim2.new(0, 0, -0.00206812541, 0)
+TextLabel_3.Size = UDim2.new(0, 350, 0, 37)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "(Misc)"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 32.000
+
+Infinite.Name = "Infinite"
+Infinite.Parent = MiscTab
+Infinite.BackgroundColor3 = Color3.fromRGB(66, 255, 33)
+Infinite.BackgroundTransparency = 0.700
+Infinite.Position = UDim2.new(0.0588058829, 0, 0.174371094, 0)
+Infinite.Size = UDim2.new(0, 120, 0, 29)
+Infinite.Font = Enum.Font.Nunito
+Infinite.Text = "Infinite Yield"
+Infinite.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infinite.TextSize = 18.000
 Infinite.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.pl/view/raw/19adf725", true))() 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
 end)
+
+TURDAL.Name = "TURDAL"
+TURDAL.Parent = FrameGUI
+TURDAL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TURDAL.BackgroundTransparency = 1.000
+TURDAL.Position = UDim2.new(0.12365672, 0, 0.890542746, 0)
+TURDAL.Size = UDim2.new(0, 76, 0, 43)
+TURDAL.Image = "rbxassetid://10256469065"
+TURDAL.ImageTransparency = 0.400
 
 -- Scripts:
 
-local function KJVP_fake_script() -- Scripts.LocalScript 
+local function MPOD_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("Frame")
+	local Button = SGui:WaitForChild("TextBox")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+end
+coroutine.wrap(MPOD_fake_script)()
+local function TKAEIXT_fake_script() -- Scripts.LocalScript 
 	local script = Instance.new('LocalScript', Scripts)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -208,8 +302,8 @@ local function KJVP_fake_script() -- Scripts.LocalScript
 	script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(KJVP_fake_script)()
-local function JBFHJ_fake_script() -- Visuals.LocalScript 
+coroutine.wrap(TKAEIXT_fake_script)()
+local function PRMRTS_fake_script() -- Visuals.LocalScript 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -218,8 +312,8 @@ local function JBFHJ_fake_script() -- Visuals.LocalScript
 	script.Parent.Parent.MiscTab.Visible = false
 	end)
 end
-coroutine.wrap(JBFHJ_fake_script)()
-local function DSEA_fake_script() -- Misc.LocalScript 
+coroutine.wrap(PRMRTS_fake_script)()
+local function ZOHPI_fake_script() -- Misc.LocalScript 
 	local script = Instance.new('LocalScript', Misc)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -228,4 +322,4 @@ local function DSEA_fake_script() -- Misc.LocalScript
 	script.Parent.Parent.MiscTab.Visible = true
 	end)
 end
-coroutine.wrap(DSEA_fake_script)()
+coroutine.wrap(ZOHPI_fake_script)()
